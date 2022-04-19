@@ -10,16 +10,16 @@ int main(void)
     double monthly_interest_rate, annual_interest_rate;
 
     // Get user input
-    printf("\nLoan Amount: ");
+    printf("\n\nLoan Amount: ");
     scanf("%lf", &loan_balance);
 
-    printf("\nHow many years is your loan: ");
+    printf("How many years is your loan: ");
     scanf("%i", &years);
 
-    printf("\nAnnual interest rate %%: ");
+    printf("Annual interest rate %%: ");
     scanf("%lf", &annual_interest_rate);
 
-    printf("\nMonthly payment: ");
+    printf("Monthly payment: ");
     scanf("%lf", &monthly_payment);
 
     //maths
