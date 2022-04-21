@@ -24,7 +24,7 @@ int main(void)
 
     //maths
 
-    monthly_interest_rate = (annual_interest_rate/100) * 12;
+    monthly_interest_rate = (annual_interest_rate/100) /12;
 
     final_month = years*12;
     total_interest = 0.0;
@@ -36,6 +36,13 @@ int main(void)
         total_interest = total_interest + interest_for_this_month;
 
         loan_balance = loan_balance - (monthly_payment - interest_for_this_month);
+
+        //Print monthly
+        printf("\nMonth(%i)",month);
+        printf("  Interest = %5.2f,", interest_for_this_month);
+        printf("  Left over Payment = %7.2f,",monthly_payment - interest_for_this_month);
+        printf("  Balance = %10.2f", loan_balance);
+
     }
 
     //PRINT results
@@ -43,5 +50,5 @@ int main(void)
     printf("\nTotal Interest = %10.2f\n", total_interest);
     printf("Final Loan Balance = %5.2f\n\n", loan_balance);
 
-
+    return 0;
 }
