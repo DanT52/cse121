@@ -37,7 +37,7 @@ int main(void){
 
 _Bool check_if_prime(unsigned int number){
 
-    for(int div = 2; div < number; div++){
+    for(int div = 2; div*div <= number; div++){
         if(number % div == 0)
         {
             return 0;
