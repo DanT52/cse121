@@ -11,7 +11,7 @@ int main (void) {
     char phrase[101], phrase_copy[101];
 
 
-    printf("Enter Phrase: ");
+    printf("Enter a phrase for palindrome checking: ");
     fgets(phrase, 101, stdin);
 
 
@@ -19,13 +19,13 @@ int main (void) {
     make_lower(phrase_copy);
     keep_chars(phrase_copy);
     
-    printf("cleaned up: %s \n\n", phrase_copy);
+    
 
     if (isPalindrome(phrase_copy)){
-        printf("You have a palindrome!!\n");
+        printf("This phrase is a palindrome: %s\n",phrase_copy);
     }
     else{
-        printf("You do not have a palindrome :(\n\n");
+        printf("Your phrase is not a palindrome.\n");
     }
 }
 
