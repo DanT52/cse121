@@ -19,6 +19,7 @@ int main (void)
    fputs(str2, fp_out);
    fputs("\n", fp_out);
    fputs(str3, fp_out);
+   fputs("\n", fp_out);
    
   
   fclose(fp_out); 
